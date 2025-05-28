@@ -33,7 +33,7 @@ class TestOperations:
     def test_without_operations(self, user):
         print(f'User without onperation {user}')
 
-
+# Словарь пользователей: номер телефона — ключ, описание — значение
 users = {
     '+7-999-123-12-12': 'User with money on bank account',
     '+7-999-123-12-13': 'User without money on bank account',
