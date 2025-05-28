@@ -13,11 +13,11 @@ def test_several_numbers(number: int, expected: int):
 
 #Тестовые данные перемножаются
 @pytest.mark.parametrize('os', ['macos', 'windows', 'linux', 'debian'])
-@pytest.mark.parametrize('browser', ['chromiun', 'webkit', 'firefox'])
+@pytest.mark.parametrize('browser', ['chromium', 'webkit', 'firefox'])
 def test_multiplication_of_numbers(os: str, browser: str):
     assert len(os + browser) > 0
 
-@pytest.fixture(params=['chromiun', 'webkit', 'firefox'])
+@pytest.fixture(params=['chromium', 'webkit', 'firefox'])
 def browser(request: SubRequest):
     return request.param
 
