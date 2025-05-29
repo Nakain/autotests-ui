@@ -11,5 +11,3 @@ class DashboardPage(BasePage):
         expect(self.dashboard_title).to_be_visible()
         expect(self.dashboard_title).to_have_text("Dashboard")
 
-    def wait_5_sec(self):
-        self.page.wait_for_timeout(5000)
