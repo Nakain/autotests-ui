@@ -1,8 +1,6 @@
 from pages.base_page import BasePage
 from playwright.sync_api import Page, expect
 
-from playwright_authorization import wrong_email_or_password_alert
-
 
 class LoginPage(BasePage):
     def __init__(self, page: Page):
