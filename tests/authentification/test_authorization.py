@@ -44,6 +44,7 @@ class TestAuthorization:
         login_page.click_login_button()
         login_page.check_visible_wrong_email_or_password_alert()
 
+
     def test_navigate_from_authorization_to_registration(
             self,
             login_page: LoginPage,
