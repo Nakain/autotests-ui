@@ -54,3 +54,8 @@ class Settings(BaseSettings):
 
 
 settings = Settings.initialize()
+
+
+# 16 passed in 15.62s - 2
+# 16 passed in 14.90s - auto
+#  16 passed in 11.16s - 16
