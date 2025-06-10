@@ -6,8 +6,6 @@ from elements.link import Link
 from elements.text import Text
 from pages.base_page import BasePage
 from playwright.sync_api import Page, expect
-
-from playwright_authorization import wrong_email_or_password_alert
 import allure
 
 class LoginPage(BasePage):
