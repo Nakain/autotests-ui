@@ -61,8 +61,8 @@ jobs:
         uses: simple-elf/allure-report-action@v1.7
         if: always()
         with:
-          allure-results: allure-results
-          allure-history: gh-pages/allure-history
+          allure_results: allure-results
+          allure_history: gh-pages/allure-history
 
       - name: Deploy report to Github Pages
         uses: peaceiris/actions-gh-pages@v2
