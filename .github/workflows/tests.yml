@@ -46,7 +46,6 @@ jobs:
 
       - name: Cache Coverage history
         if: always()
-        id: cache-primes-save
         uses: actions/cache/save@v4
         with:
           path: coverage-history.json
@@ -70,6 +69,7 @@ jobs:
 
   publish-report:
     needs: run-tests
+    if: always()
     runs-on: ubuntu-latest
 
     steps:
