@@ -15,7 +15,12 @@ pipeline {
         stages {
             stage('Run tests') {
                 steps {
-                    bat '"%PYTHON%" -m pytest -m regression --junitxml=report.xml --alluredir=./allure-results --numprocesses 2'
+                    withCredentials([usernamePassword(credentialsId: 'autotests-user',
+                                                       usernameVariable: 'TEST_USER.EMAIL',
+                                                       passwordVariable: 'TEST_USER.PASSWORD')]) {
+                        bat '"%PYTHON%" -m pytest -m regression --junitxml=report.xml
+            --alluredir=./allure-results --numprocesses 2'
+                    }
                 }
             }
 
