@@ -21,7 +21,7 @@ env:
 
 jobs:
   run-tests:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
 
     steps:
       - name: Check out repository
@@ -81,7 +81,7 @@ jobs:
   publish-report:
     needs: run-tests
     if: always()
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
 
     steps:
 
