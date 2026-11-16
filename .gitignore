@@ -20,7 +20,7 @@ tracing
 coverage-history.json
 coverage-report.json
 coverage-results
-coverage.htmlgit add .gitignore .env.example
+coverage.html
 
 #secrets
 .env
