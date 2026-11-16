@@ -12,6 +12,7 @@ functionalities of the application to ensure its stability and correctness. The 
 for organizing test code with clear, maintainable scripts.
 
 ## Getting Started
+CI: jenkins polling
 
 ### Clone the Repository
 
